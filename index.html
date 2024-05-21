@@ -16,7 +16,10 @@ Jump to:
 {% for project in site.data.s24games %}
 <tr>
 <td colspan=2 style='border-bottom: 0px'>
-    <h2 name="{{ project.Team }}" id="{{ project.Team }}">{{ project.Team }}: {{ project.Game }}</h2>
+    <h2 name="{{ project.Team }}" id="{{ project.Team }}">
+        {{ project.Game }}
+        <sub style="float: right; color: #606060">{{ project.Team | capitalize }}</sub>
+    </h2>
 </td>
 </tr>
 
@@ -37,7 +40,7 @@ Jump to:
 </p>
 </td>
 
-<td width="40%">
+<td width="40%" style="vertical-align: top">
 <a href="screenshots/{{ project.Team }}_large.png" target=_blank>
     <img src="screenshots/{{ project.Team }}_small.png">
 </a>
