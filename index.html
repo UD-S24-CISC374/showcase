@@ -8,7 +8,7 @@ title: CISC374 Showcase
 Jump to:
 <ul>
 {% for project in site.data.s24games %}
-    <li><a href="#{{ project.Team }}">{{ project.Team }}</a></li>
+    <li><a href="#{{ project.Team }}">{{ project.Team | capitalize }} - {{ project.Game }}</a></li>
 {% endfor %}
 </ul>
 <hr>
